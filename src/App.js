@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import Landing from "./Pages/Landing/Landing";
+import Navbar from "./Components/Navbar/Navbar";
+import Footer from "./Components/Footer/Footer";
+import {AppContext} from "./utils/ContextWrapper"
+import "./App.css";
+
 
 function App() {
+  const context = React.useContext(AppContext);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`font-[Montserrat] ${context.bgColor} box-border`}>
+        <Navbar />
+        <Landing />
+        <Footer />
     </div>
   );
 }

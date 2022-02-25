@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* .App {
+  background-color: #f5f3f7;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+} */
+#F59E0B
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #000;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-link {
+  color: black;
+  font-size: 1.275rem;
+  font-weight: 500;
+  padding: 3px 2px;
+  text-decoration: none;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-link:after {
+  bottom: -4px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  background: rgba(236, 72, 153, 1);
+  opacity: 0.6;
+  transition: width 0.6s ease 0s, opacity 0.6s ease 0s;
+  width: 0;
+}
+
+.navbar-link:hover:after {
+  width: 100%;
+  opacity: 0.9;
+}
+
+.active-class {
+  color: rgba(236, 72, 153, 1);
 }
