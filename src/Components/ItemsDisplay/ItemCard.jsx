@@ -9,7 +9,7 @@ const ItemCard = ({ imageurl, description }) => {
         <div className="mt-1 text-white text-3xl font-semibold  leading-tight truncate ">
           {description}
         </div>
-        <div className="text-white text-sm ">Starting from Rs. 499</div>
+        <div className="text-white text-sm">Starting from Rs. 499</div>
       </div>
     </>
   );
