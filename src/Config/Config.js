@@ -30,4 +30,4 @@ export const configs = {
   },
 };
 
-export const configName = process.env.REACT_APP_BRAND;
+export const configName = process.env.REACT_APP_BRAND || "Default";
